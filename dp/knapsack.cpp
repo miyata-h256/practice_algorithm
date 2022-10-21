@@ -31,6 +31,14 @@ int main(){
                
         }
     }
+
+    for(int i=0;i<N+1;i++){
+        for(int j=0;j<W+1;j++){
+            printf("%3d",memo[i][j]);
+        }
+        putchar('\n');
+    }
+
     cout << memo[N][W] << endl;
     return 0;
 }
