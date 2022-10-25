@@ -3,7 +3,7 @@
 using namespace std;
 
 void MergeSort(vector<int> &a,int left,int right){
-    if(right - left == 0) return;
+    if(right - left == 1) return;
 
     int mid = left + (right-left)/2;
 
@@ -45,6 +45,7 @@ int main(){
     for(int i=0;i<N;i++){
         printf("%5d",a[i]);
     }
+    putchar('\n');
 
     MergeSort(a,0,N);
 
@@ -52,4 +53,6 @@ int main(){
     for(int i=0;i<N;i++){
         printf("%5d",a[i]);
     }
+
+    putchar('\n');
 }
